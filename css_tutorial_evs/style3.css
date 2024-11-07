@@ -1,0 +1,51 @@
+table{
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr, td{
+    border: 1px solid black;
+    text-align: center;
+}
+
+ul.unorder{
+    display: none;
+}
+
+.dv{
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 10px;
+}
+li{
+    display: block;
+}
+
+span{
+    border: 1px solid black;
+    width: 100%;
+    display: none;
+}
+
+
+/* Max-Width and Position */
+
+.dv1{
+    border: 2px solid red;
+    margin-bottom: 10px;
+    max-width: 500px;
+    position: relative;
+    height: 500px;
+
+}
+
+.dv2{
+    position: fixed;
+    border: 2px solid green;
+    margin-bottom: 10px;
+    max-width: 1500px;
+    /* position: absolute; */
+    height: 100px;
+    top: 0;
+}

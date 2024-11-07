@@ -1,0 +1,30 @@
+/* External CSS */
+/* h1{
+    color: green;
+    font-size: 50px;
+    font-weight: 500;
+} */
+
+
+/* Class Selector */
+/* .heading{ */
+    /* color: purple; */
+    /* font-size: 50px; */
+    /* font-weight: 500; */
+/* } */
+
+/* Id Selector */
+/* #paragraph{
+    color: red;
+} */
+
+/* Univarsal Selector */
+/* *{
+    font-size: 70px;
+} */
+
+/* Grouping Selector */
+h1, p{
+    color: blue;
+    /* border-bottom: 1px solid; */
+}

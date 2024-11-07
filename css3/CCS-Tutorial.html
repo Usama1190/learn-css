@@ -1,0 +1,1956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Caption</title>
+
+    <style>
+        table, th, td{border: 1px solid black;}
+
+        caption{caption-side: bottom;}
+    </style>
+</head>
+<body>
+    <h2>Table Caption</h2>
+
+    <table>
+        <caption>Table 1.1 Customers</caption>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+              </tr>
+              <tr class="alt">
+                <td>Berglunds snabbköp</td>
+                <td>Christina Berglund</td>
+                <td>Sweden</td>
+              </tr>
+              <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+              </tr>
+              <tr class="alt">
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+              </tr>
+              <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+              </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>   Responsive Table
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+
+    <style>
+        table{width: 100%; border-collapse: collapse;}
+
+        th, td{border: 1px solid black; text-align: left; padding: 8px;}
+
+        tr:nth-child(even) {background-color: #f2f2f2;}
+    </style>
+</head>
+<body>
+    <h2>Responsive Table</h2>
+    <p>A responsive table will display a horizontal scroll bar if the screen is 
+        too small to display the full content. Resize the browser window to see 
+        the effect.
+    </p>
+
+    <p>To create a responsive table, add a container element (like div) to
+        <b>overflow-x:auto</b> around the table element.
+    </p>
+
+    <div style="overflow-x: auto;">
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+            </tr>
+
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+            </tr>
+
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+            </tr>
+
+            <tr>
+                <td>Adam</td>
+                <td>Johnson</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>    Colored Table Header
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Style</title>
+
+    <style>
+        table{width: 100%; border-collapse: collapse;}
+
+        th, td{padding: 8px; text-align: left;}
+
+        tr:nth-child(even) {background-color: #f2f2f2;}
+
+        th{background-color: #04AA6D; color: #fff;}
+    </style>
+</head>
+<body>
+    <h2>Colored Table Header</h2>
+    <table>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Swanson</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <td>Cleveland</td>
+          <td>Brown</td>
+          <td>$250</td>
+        </tr>
+      </table>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>    striped rows
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Style</title>
+
+    <style>
+        table{width: 100%; border-collapse: collapse;}
+
+        th, td{padding: 8px; text-align: left;}
+
+        tr:nth-child(even) {background-color: #f2f2f2;}
+    </style>
+</head>
+<body>
+    <h2>Striped Table</h2>
+
+    <p>For zebra-striped tables, use the nth-child selector and add a 
+        background-color to all even (or odd) table rows.
+    </p>
+
+    <table>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Swanson</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <td>Cleveland</td>
+          <td>Brown</td>
+          <td>$250</td>
+        </tr>
+      </table>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>    hoverable table
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Style</title>
+
+    <style>
+        table{width: 100%; border-collapse: collapse;}
+
+        th, td{border-bottom: 1px solid #ddd; padding: 8px; text-align: left;}
+
+        tr:hover{background-color: coral;}
+    </style>
+</head>
+<body>
+    <h2>Hoverable Table</h2>
+
+    <p>Move the mouse over the table rows to see the effect.</p>
+    <table>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Swanson</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <td>Cleveland</td>
+          <td>Brown</td>
+          <td>$250</td>
+        </tr>
+      </table>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>    border-buttom property
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Style</title>
+
+    <style>
+        table{width: 100%; border-collapse: collapse;}
+
+        th, td{border-bottom: 1px solid #ddd; padding: 8px; text-align: left;}
+    </style>
+</head>
+<body>
+    <h2>Bordered Table Divider</h2>
+
+    <p>Add the border-buttom property to th and td for horizontal divider.</p>
+
+    <table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Swanson</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <td>Cleveland</td>
+          <td>Brown</td>
+          <td>$250</td>
+        </tr>
+      </table>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>    Table padding
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Style</title>
+
+    <style>
+        table{width: 100%; border-collapse: collapse;}
+
+        table, th, td{border: 1px solid #ddd}
+
+        th, td{padding: 10px;}
+    </style>
+</head>
+<body>
+    <h2>The vertical-align Property</h2>
+
+    <p>This property set the vertical alignment (like top, buttom, or middle) 
+        of the content in th or td.
+    </p>
+
+    <table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Swanson</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <td>Cleveland</td>
+          <td>Brown</td>
+          <td>$250</td>
+        </tr>
+      </table>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>    vertical alignment
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{width: 100%; border-collapse: collapse;}
+
+        table, th, td{border: 1px solid black;}
+
+        td{height: 50px; vertical-align: bottom;}
+    </style>
+</head>
+<body>
+    <h2>The vertical alignment Property</h2>
+
+    <p>This property set the vertical alignment (like top, buttom, or middle) 
+        of the content in th or td.
+    </p>
+
+    <table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Swanson</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <td>Cleveland</td>
+          <td>Brown</td>
+          <td>$250</td>
+        </tr>
+      </table>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>    text-align th
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table Alignment</title>
+
+    <style>
+        table{width: 100%; border-collapse: collapse;}
+
+        table, th, td{border: 1px solid black;}
+
+        th{text-align: left;}
+    </style>
+</head>
+<body>
+    <h2>The text-align Property</h2>
+
+    <p>This property set the horizontal alignment (like left, right or center) 
+        of the content in th or td.
+    </p>
+
+    <table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Swanson</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <td>Cleveland</td>
+          <td>Brown</td>
+          <td>$250</td>
+        </tr>
+      </table>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>    text align horizontal
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table text align horizontally</title>
+
+    <style>
+        table{width: 100%; border-collapse: collapse;}
+
+        table, th, td{border: 1px solid black;}
+
+        td{text-align: center;}
+    </style>
+</head>
+<body>
+    <h2>The text-align Property</h2>
+
+    <p>This property sets the horizontal alignment (like left, right, or center) 
+        of the content in th or td.
+    </p>
+    <table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Swanson</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <td>Cleveland</td>
+          <td>Brown</td>
+          <td>$250</td>
+        </tr>
+      </table>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>    width 50%
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Table Size</title>
+
+    <style>
+        table{width: 50%; border-collapse: collapse;}
+        table, th, td{border: 1px solid black;}
+    </style>
+</head>
+<body>
+    <h2>A table that only span half the page</h2>
+
+    <p>Set the width of the table to 50%</p>
+
+    <table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Swanson</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <td>Cleveland</td>
+          <td>Brown</td>
+          <td>$250</td>
+        </tr>
+      </table>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>    width and height
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table Size</title>
+
+    <style>
+        table{width: 100%; border-collapse: collapse;}
+
+        table, th, td{border: 1px solid black;}
+
+        th{height: 70px;}
+    </style>
+</head>
+<body>
+    <h2>The width and height properties</h2>
+
+    <p>Set the width of the table, and the height of the table header row:</p>
+
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>    table outside border
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table Borders</title>
+
+    <style>
+        table{border: 1px solid; width: 100%;}
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>    Collapse Table Borders
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, th, td{border: 1px solid;}
+        table{width: 100%; border-collapse: collapse;}
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>    Tables Borders
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table (Table Border)</title>
+
+    <style>
+        table, th, td{border: 1px solid;}
+        table{width: 100%;}
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table (Table Borders)</title>
+
+    <style>
+        table, th, td{border: 1px solid;}
+    </style>
+</head>
+<body>
+    <h2>Add a border to a table.</h2>
+
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tables (Tables Borders)</title>
+
+    <style>
+        #customers 
+        { 
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td, #customers th
+        {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {background-color: #f2f2f2;}
+
+        #customers th
+        {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: #fff;
+        }
+
+        #customers tr:hover
+        {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>A Fancy Table</h1>
+
+<table id="customers">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbköp</td>
+    <td>Christina Berglund</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Königlich Essen</td>
+    <td>Philip Cramer</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>Simon Crowther</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Paris spécialités</td>
+    <td>Marie Bertrand</td>
+    <td>France</td>
+  </tr>
+</table>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Color</title>
+
+    <style>
+        h1 {
+          background-color: green;
+        }
+        
+        div {
+          background-color: lightblue;
+        }
+        
+        p {
+          background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS background-color example!</h1>
+    <div>
+        This is a text inside a div element.
+        <p>This paragraph has its own background color.</p>
+        We are still in the div element.
+    </div>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+
+    <p>This page has a light blue background color!</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Image</title>
+
+    <style>
+        p {
+          background-image: url("paper.gif");
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+
+    <p>This paragraph has an image as the background!</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+          background-image: url("bgdesert.jpg");
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>This text is not easy to read on this background image.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Image</title>
+
+    <style>
+        body {
+          background-image: url("paper.gif");
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+
+    <p>This page has an image as the background!</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+          background: rgb(0, 128, 0);
+        }
+        
+        div.first {
+          background: rgba(0, 128, 0, 0.1);
+        }
+        
+        div.second {
+          background: rgba(0, 128, 0, 0.3);
+        }
+        
+        div.third {
+          background: rgba(0, 128, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <h1>Transparent Boxes 2</h1>
+
+<p>Result with opacity:</p>
+
+<div style="opacity:0.1;">
+  <h1>10% opacity</h1>
+</div>
+
+<div style="opacity:0.3;">
+  <h1>30% opacity</h1>
+</div>
+
+<div style="opacity:0.6;">
+  <h1>60% opacity</h1>
+</div>
+
+<div>
+  <h1>opacity 1</h1>
+</div>
+
+<p>Result with rgba():</p>
+
+<div class="first">
+  <h1>10% opacity</h1>
+</div>
+
+<div class="second">
+  <h1>30% opacity</h1>
+</div>
+
+<div class="third">
+  <h1>60% opacity</h1>
+</div>
+
+<div>
+  <h1>default</h1>
+</div>
+
+<p>Notice how the text gets transparent as well as the background color when 
+    using the opacity property.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS background-color</title>
+
+    <style>
+        div {
+          background-color: green;
+        }
+        
+        div.first {
+          opacity: 0.1;
+        }
+        
+        div.second {
+          opacity: 0.3;
+        }
+        
+        div.third {
+          opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transparent Boxes</h1>
+
+    <p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+
+    <div class="first">
+        <h1>opacity 0.1</h1>
+    </div>
+
+    <div class="second">
+        <h1>opacity 0.3</h1>
+    </div>
+
+    <div class="third">
+        <h1>opacity 0.6</h1>
+    </div>
+
+    <div>
+        <h1>opacity 1 (default)</h1>
+    </div>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1 {
+          background-color: green;
+        }
+        
+        div {
+          background-color: lightblue;
+        }
+        
+        p {
+          background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS background-color example!</h1>
+    <div>
+        This is a text inside a div element.
+    <p>This paragraph has its own background color.</p>
+        We are still in the div element.
+    </div>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS background-color</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+
+    <p>This page has a light blue background color!</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSL</title>
+</head>
+<body>
+    <h1>Make transparent colors with HSLA</h1>
+
+    <h2 style="background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h2>
+    <h2 style="background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h2>
+    <h2 style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h2>
+    <h2 style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h2>
+    <h2 style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h2>
+    <h2 style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h2>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSL</title>
+</head>
+<body>
+    <h1>Shades of gray</h1>
+
+    <p>With HSL, shades of gray are made by setting the saturation to 0%, and adjusting the lightness from 0% to 100%:</p>
+
+    <h2 style="background-color:hsl(0, 0%, 0%);">hsl(0, 0%, 0%)</h2>
+    <h2 style="background-color:hsl(0, 0%, 24%);">hsl(0, 0%, 24%)</h2>
+    <h2 style="background-color:hsl(0, 0%, 47%);">hsl(0, 0%, 47%)</h2>
+    <h2 style="background-color:hsl(0, 0%, 71%);">hsl(0, 0%, 71%)</h2>
+    <h2 style="background-color:hsl(0, 0%, 94%);">hsl(0, 0%, 94%)</h2>
+    <h2 style="background-color:hsl(0, 0%, 100%);">hsl(0, 0%, 100%)</h2>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSL</title>
+</head>
+<body>
+    <h1>HSL Lightness</h1>
+
+    <p>The third parameter of hsl() defines the lightness. 0% means black, and 100% means white:</p>
+
+    <h2 style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h2>
+    <h2 style="background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h2>
+    <h2 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h2>
+    <h2 style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h2>
+    <h2 style="background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h2>
+    <h2 style="background-color:hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h2>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSL</title>
+</head>
+<body>
+    <h1>HSL Saturation</h1>
+
+    <p>The second parameter of hsl() defines the saturation. Less saturation mean less color. 0% is completely gray:</p>
+
+    <h2 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h2>
+    <h2 style="background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h2>
+    <h2 style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h2>
+    <h2 style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h2>
+    <h2 style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h2>
+    <h2 style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h2>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSL</title>
+</head>
+<body>
+    <h1>Specify colors using HSL values</h1>
+
+    <h2 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h2>
+    <h2 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h2>
+    <h2 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h2>
+    <h2 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h2>
+    <h2 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h2>
+    <h2 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h2>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #fc9; /*same as #ffcc99*/
+        }
+
+        h1 {
+            color: #f0f; /*same as #ff00ff*/
+        }
+
+        p {
+            color: #b58;  /*same as #bb5588*/
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 3-digit Hex Code</h1>
+    <p>This is a paragraph.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEX</title>
+</head>
+<body>
+    <h1>Shades of gray</h1>
+
+    <p>By using equal values for red, green, and blue, you will get different 
+        shades of gray:</p>
+
+    <h2 style="background-color:#3c3c3c;">#3c3c3c</h2>
+    <h2 style="background-color:#616161;">#616161</h2>
+    <h2 style="background-color:#787878;">#787878</h2>
+    <h2 style="background-color:#b4b4b4;">#b4b4b4</h2>
+    <h2 style="background-color:#f0f0f0;">#f0f0f0</h2>
+    <h2 style="background-color:#f9f9f9;">#f9f9f9</h2>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEX</title>
+</head>
+<body>
+    <h1>Specify colors using HEX values</h1>
+
+    <h2 style="background-color:#ff0000;">#ff0000</h2>
+    <h2 style="background-color:#0000ff;">#0000ff</h2>
+    <h2 style="background-color:#3cb371;">#3cb371</h2>
+    <h2 style="background-color:#ee82ee;">#ee82ee</h2>
+    <h2 style="background-color:#ffa500;">#ffa500</h2>
+    <h2 style="background-color:#6a5acd;">#6a5acd</h2>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB</title>
+</head>
+<body>
+    <h1>Make transparent colors with RGBA</h1>
+
+    <h2 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h2>
+    <h2 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h2>
+    <h2 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h2>
+    <h2 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h2>
+    <h2 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h2>
+    <h2 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h2>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB</title>
+</head>
+<body>
+    <h1>Shades of gray</h1>
+
+    <p>By using equal values for red, green, and blue, you will get different 
+        shades of gray:</p>
+
+    <h2 style="background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</h2>
+    <h2 style="background-color:rgb(90, 90, 90);">rgb(90, 90, 90)</h2>
+    <h2 style="background-color:rgb(120, 120, 120);">rgb(120, 120, 120)</h2>
+    <h2 style="background-color:rgb(180, 180, 180);">rgb(180, 180, 180)</h2>
+    <h2 style="background-color:rgb(210, 210, 210);">rgb(210, 210, 210)</h2>
+    <h2 style="background-color:rgb(240, 240, 240);">rgb(240, 240, 240)</h2>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB</title>
+</head>
+<body>
+    <h1>Specify colors using RGB values</h1>
+
+    <h2 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h2>
+    <h2 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h2>
+    <h2 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h2>
+    <h2 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h2>
+    <h2 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h2>
+    <h2 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h2>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color Values</title>
+</head>
+<body>
+    <p>Same as color name "Tomato":</p>
+
+    <h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+    <h1 style="background-color:#ff6347;">#ff6347</h1>
+    <h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+
+    <p>Same as color name "Tomato", but 50% transparent:</p>
+    <h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+    <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+
+    <p>In addition to the predefined color names, colors can be specified using 
+        RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.
+    </p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Color</title>
+</head>
+<body>
+    <h1 style="border: 2px solid Tomato;">Hello World</h1>
+
+    <h1 style="border: 2px solid DodgerBlue;">Hello World</h1>
+
+    <h1 style="border: 2px solid Violet;">Hello World</h1>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Color</title>
+</head>
+<body>
+    <h3 style="color:Tomato;">Hello World</h3>
+
+    <p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer 
+        adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+        dolore magna aliquam erat volutpat.</p>
+
+    <p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis 
+        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
+        ex ea commodo consequat.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS background-color</title>
+</head>
+<body>
+    <h1 style="background-color:DodgerBlue;">Hello World</h1>
+
+    <p style="background-color:Tomato;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat 
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation 
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+    </p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Colors color names</title>
+</head>
+<body>
+    <h1 style="background-color:Tomato;">Tomato</h1>
+    <h1 style="background-color:Orange;">Orange</h1>
+    <h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+    <h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+    <h1 style="background-color:Gray;">Gray</h1>
+    <h1 style="background-color:SlateBlue;">SlateBlue</h1>
+    <h1 style="background-color:Violet;">Violet</h1>
+    <h1 style="background-color:LightGray;">LightGray</h1>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Comments</title>
+
+    <style>
+        p {
+            color: red; /* Set text color to red */
+        }
+    </style>
+</head>
+<body>
+    <h1>My Heading</h1>
+
+    These paragraphs will be red
+    <p>Hello World!</p>
+    <p>This paragraph is style with CSS.</p>
+    <p>HTML and CSS comments are not shown in the output.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Comments</title>
+
+    <style>
+        p {
+            /* This is 
+            a multi line
+            comment */
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello World!</p>
+    <p>This paragraph is style with CSS.</p>
+    <p>CSS comments are not shown in the output.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Comments</title>
+
+    <style>
+        p {
+            color: /*red*/ blue;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello World!</p>
+    <p>This paragraph are style with CSS</p>
+    <p>CSS comments are not shown in the output.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Comments</title>
+
+    <style>
+        p {
+            color: red;  /* Set text color to red */
+        }
+    </style>
+</head>
+<body>
+    <p>Hello World!</p>
+    <p>This paragraph is style with CSS</p>
+    <p>CSS comments are not shown in the output.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Comments</title>
+
+    <style>
+        /* This is a single-line comments */
+        p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello World!</p>
+    <p>This paragraph is styled with CSS.</p>
+    <p>CSS comments are not shown in the output.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal External CSS</title>
+
+    <style>
+        h1 {
+            color: orange;
+        }
+    </style>
+
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <h1>This is a heading</h1>
+
+    <p>This is a paragraph.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External Internal Style</title>
+
+    <link rel="stylesheet" href="mystyle.css">
+
+    <style>
+        h1 {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+
+    <p>The style of this document is an combination of a external stylesheet and 
+        internal style.
+    </p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline CSS</title>
+</head>
+<body>
+    <h1 style="color: blue; text-align: center;">This is a heading</h1>
+
+    <p style="color: red;">This is a paragraph.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS</title>
+
+    <style>
+        body {
+            background-color: linen;
+        }
+
+        h1 {
+             color: maroon;
+             margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+
+    <p>This is a paragraph.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External CSS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>This is a heading</h1>
+
+    <p>This is a paragraph.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors grouping</title>
+
+    <style>
+        h1, h2, p {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <h2>Smaller heading!</h2>
+
+    <p>This is a paragraph.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Universal</title>
+
+    <style>
+        * {
+            color: blue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+
+    <p>Every element on the page will be affected by the style.</p>
+    <p>Me too!</p>
+    <p>And me!</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors More Class</title>
+
+    <style>
+        p.center {
+            color: red;
+            text-align: center;
+        }
+
+        p.large {
+            font-size: 300%;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center">This heading will not be affected</h1>
+
+    <p class="center">This paragraph will be red and centered-aligned.</p>
+
+    <p class="center large">This paragraph will be red, centered-aligned, and in a large font-size.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors element class</title>
+
+    <style>
+        p.center {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center">This heading will not affected by the style</h1>
+
+    <p class="center">This paragraph will be red and centered-aligned.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors class</title>
+
+    <style>
+        .center {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center">Red and centered-aligned heading</h1>
+    
+    <p class="center">Red and centered-aligned paragraph.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors id</title>
+
+    <style>
+        #para1 {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p id="para1">Hello World!</p>
+    <p>This paragraph is not affected by the style.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Element</title>
+
+    <style>
+        p {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>Every paragraphs will be affected by the style.</p>
+    <p>Me too!</p>
+    <p>And me!</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Syntax</title>
+
+    <style>
+        p {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello World!</p>
+    <p>These paragraphs are styled with CSS.</p>
+</body>
+</html -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Introduction</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            font-family: Verdana;
+        }
+    </style>
+</head>
+<body>
+    <h1>My First CSS Example</h1>
+
+    <p>This is a paragraph.</p>
+</body>
+</html -->

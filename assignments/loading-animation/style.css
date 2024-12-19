@@ -1,0 +1,104 @@
+body
+{
+    margin: 0;
+}
+
+#navbar
+{
+    background-color: #000;
+    border-radius: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    transition: all ease;
+}
+
+#navbar ul a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover
+{
+    transform: rotate(180deg);
+}
+
+#navbar li
+{
+    display:inline-block;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.search
+{
+    border-radius: 20px;
+    height: 25px;
+}
+
+#navbar .search
+{
+    margin-left: 30px;
+}
+
+.container
+{
+    background-color: #000;
+    width: 100%;
+    height: 600px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.container .circle
+{
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 20px;
+    animation: scaling 2.5s ease-in-out infinite;
+}
+
+@keyframes scaling {
+    0%, 100%{
+        transform: scale(0.2);
+    }
+    50%
+    {
+        transform: scale(1);
+    }
+}
+
+div.circle:nth-child(0)
+{
+    animation-delay: 0s;
+}
+
+div.circle:nth-child(1)
+{
+    animation-delay: 0.2s;
+}
+
+div.circle:nth-child(2)
+{
+    animation-delay: 0.4s;
+}
+
+div.circle:nth-child(3)
+{
+    animation-delay: 0.6s;
+}
+
+div.circle:nth-child(4)
+{
+    animation-delay: 0.8s;
+}
+
+div.circle:nth-child(5)
+{
+    animation-delay: 1s;
+}
